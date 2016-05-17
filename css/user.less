@@ -52,7 +52,8 @@ figure {
     &-submit {
         width: 135px;
         height: 50px;
-        margin-left: -10px;
+        margin-left: -1px;
+        font: 700 12px/48px 'Montserrat';
         border: 0;
         outline: 0;
         background: #7beec7;
@@ -411,6 +412,9 @@ figure {
     color: #999999;
 }
 
+.newsletter__form__inputs{
+    display: flex;
+}
 .newsletter__form-email {
     width: 375px;
     height: 50px;
@@ -464,12 +468,13 @@ figure {
 }
 
 .navigation__left {
-    margin-right: 227px;
+    margin-right: 193px;
     li {
         display: inline-block;
         list-style-type: none;
-        padding-right: 40px;
+        padding:0 36px 21px 0;
         font: 400 14px/48px 'Open Sans';
+        text-transform: uppercase;
         color: #999999;
     }
     a {
@@ -478,25 +483,21 @@ figure {
     a:hover:before {
         content: '';
         position: absolute;
-        width: calc(50%);
+        width: calc(40%);
         height: 1px;
         background: black;
     }
 }
 
-.navigation__right {
-    position: relative;
-    padding-top: 5px;
-}
 
 .navigation__right-author {
     font: 400 14px/48px 'Open Sans';
+    text-transform: uppercase;
     color: #9a9a9a;
 }
 
 .social-media {
-    position: absolute;
-    right: 0;
+    text-align: right;
     li {
         display: inline-block;
     }
