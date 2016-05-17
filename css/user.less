@@ -8,6 +8,7 @@
 }
 h1,h2,h3,h4,h5{
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 h2{
     font-size: 30px;
@@ -101,4 +102,62 @@ figure{
 .agency-content{
     font-size: 16px;
     line-height: 30px;
+}
+/*chooseus section*/
+.chooseus{
+    margin-top: 250px;
+}
+.chooseus__top{
+    width: 750px;
+    height: 90px;
+    padding: 0 15px;
+    margin: 0 195px 100px;
+    text-align: center;
+}
+.chooseus__top-title{
+    position: relative;
+    &:before{
+        position: absolute;
+        z-index: -1;
+        content: '';
+        width: 67px;
+        height: 22px;
+        background: #7beec7;
+        bottom: 3px;
+    }
+}
+.chooseus__top-subtitle{
+    line-height: 24px;
+}
+.chooseus__bottom{
+    display: flex;
+    height: 500px;
+}
+.chooseus__bottom__services{
+    display: flex;
+    flex-wrap: wrap;
+    width: 683px;
+}
+
+.chooseus__bottom__services__list{
+    width: 293px;
+    list-style-type: none; 
+    i{
+        font-size: 25px;
+    }
+    &:nth-child(even){
+        padding-left: 35px;
+    }
+}
+.services__list-title{
+    line-height: 48px;
+    font-size: 18px;
+}
+.item-list{
+    li{
+        line-height: 30px;
+        font-size: 14px;
+        list-style-type: none;
+        color: #999999;
+    }
 }
