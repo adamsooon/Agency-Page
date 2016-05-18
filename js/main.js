@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    function label() {
+    /*function label() {
         var a = $('#email').val();
         if (a.length > 0) {
             $('#email+label').addClass('valid');
@@ -7,5 +7,20 @@ $(document).ready(function () {
             $('#email+label').removeClass('valid');
         }
     }
-    setInterval(label, 500);
+    setInterval(label, 500);*/
+    // Newsletter form label below
+    $('#email').blur(function(){
+        var a = $('#email').val();
+        if (a.length > 0) {
+            $('#email+label').addClass('valid');
+        } else {
+            $('#email+label').removeClass('valid');
+        }
+    });
 });
+//Google maps
+$('.map-wrap').easyGoogleMaps({
+    lat: 1.276816,
+    lng: 103.848346,
+    zoom: 13
+  });

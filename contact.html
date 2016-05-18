@@ -27,49 +27,48 @@
 
     <header class="header-contact">
         <div class="inner">
-            <div class="contact__text">
-                <h1 class="contact__text-title">Contact US</h1>
-                <p class="contact__text-subtitle">Home/Contact</p>
+            <div class="header-contact__text">
+                <h1 class="header-contact__text-title">Contact US</h1>
+                <p class="header-contact__text-subtitle">Home/Contact</p>
             </div>
         </div>
     </header>
     <section class="contact">
         <div class="inner">
-            <form method="post" class="contact-date__form">
-                <label for="form-name"></label>
-                <input type="text" class="form-name" id="form-name" required>
-                <label for="form-email"></label>
-                <input type="email" class="form-email" id="form-email" required>
-                <label for="form-object"></label>
-                <input type="text" class="form-object" id="form-object" required>
-                <label for="form-message"></label>
-                <textarea name="form-message" id="form-message"></textarea>
-                <button class="btn btn-green">SEND</button>
-            </form>
-        </div>
-        <div class="contact__info">
-            <h4 class="contact__info-title">Contact Info</h4>
-            <p class="contact__info-text">Lorem ipsum dolor sit amet, conse adipisicing elit. Libero incidunt quod ab mollitia quia dolorum conse.</p>
-            <address>
+            <div class="contact__left">
+                <form method="post" class="contact-date__form">
+                    <input type="text" class="form-name" id="form-name" placeholder="YOUR NAME" required>
+                    <input type="email" class="form-email" id="form-email" placeholder="YOUR EMAIL" required>
+                    <input type="text" class="form-object" id="form-object" placeholder="OBJECT" required>
+                    <textarea class="form-message" name="form-message" id="form-message" placeholder="MESSAGE"></textarea>
+                    <button class="btn btn-green">SEND</button>
+                </form>
+
+                <div class="contact__info">
+                    <h4 class="contact__info-title">Contact Info</h4>
+                    <p class="contact__info-text">Lorem ipsum dolor sit amet, conse adipisicing elit. Libero incidunt quod ab mollitia quia dolorum conse.</p>
+                    <address>
             <ul class="contact__info__address">
                 <li>13D, Functional apartment, Unique colony, </li>
                 <li>Agadir 86360</li>
                 <li>+212 124-566-780</li>
                 <li>+212 124-566-780</li>
-                <li>email@website.com</li>
+                <li><a href="mailto:email@website.com" target="_top">email@website.com</a></li>
             </ul>
             </address>
-            <ul class="social-media">
-                <li><a href="#"><i class="icon-facebook"></i></a></li>
-                <li><a href="#"><i class="icon-twitter"></i></a></li>
-                <li><a href="#"><i class="icon-youtube-play"></i></a></li>
-                <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                <li><a href="#"><i class="icon-pinterest"></i></a></li>
-                <li><a href="#"><i class="icon-instagram"></i></a></li>
-            </ul>
-        </div>
-        <div class="map">
-            <div class="map-wrap"></div>
+                    <ul class="social-media">
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact__right">
+                <div class="map-wrap"></div>
+            </div>
         </div>
     </section>
     <section class="newsletter">
@@ -82,7 +81,7 @@
                 <h3 class="newsletter__form-title">Stay Informed With Our Newsletter</h3>
                 <p class="newsletter__form-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="newsletter__form__inputs">
-                <input id="email" type="email" class="newsletter__form-email" required>
+                    <input id="email" type="email" class="newsletter__form-email" required>
                     <label for="email">Your Email</label>
                     <input type="submit" class="btn-submit" value="SEND">
                 </div>
@@ -93,12 +92,12 @@
         <div class="inner">
             <nav>
                 <ul class="navigation__left">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">About US</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact US</a></li>
+                    <li><a href="contact.html">Contact US</a></li>
                 </ul>
             </nav>
             <div class="navigation__right">
@@ -121,7 +120,7 @@
     </script>
     <script src="js/plugins.js"></script>
     <script src="js/easygooglemaps.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
