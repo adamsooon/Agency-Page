@@ -74,6 +74,9 @@ figure {
   display: block;
   max-width: 100%;
 }
+button {
+  cursor: pointer;
+}
 /* header*/
 .main-top {
   height: 850px;
