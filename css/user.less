@@ -75,6 +75,14 @@ figure {
 .header-subtitle{
     font: 700 14px/48px 'Montserrat';
 }
+
+.img-wrapper{
+    width: 100%;
+    img{
+        display: block;
+        max-width: 100%;
+    }
+}
 /* header*/
 
 .main-top {
@@ -95,7 +103,7 @@ figure {
     display: table;
     height: 30px;
     width: 96px;
-    margin: 0 230px;
+    margin: 0 auto;
     background: #7beec7;
 }
 
@@ -132,13 +140,14 @@ figure {
 .main-top__bottom {
     margin-top: 125px;
     display: flex;
+    figure {
+        max-width: 458px;
+        max-height: 400px;
+        margin-right: 137px;
+    }
 }
 
-figure {
-    max-width: 458px;
-    max-height: 400px;
-    margin-right: 137px;
-}
+
 
 .agency {
     position: relative;
