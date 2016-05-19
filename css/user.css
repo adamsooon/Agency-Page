@@ -153,8 +153,7 @@ button {
 .chooseus__top {
   width: 750px;
   height: 90px;
-  padding: 0 15px;
-  margin: 0 195px 100px;
+  margin: 0 auto 100px;
   text-align: center;
 }
 .chooseus__top-title {
