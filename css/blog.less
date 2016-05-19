@@ -12,6 +12,7 @@
 /*blog section*/
 .blog{
     height: 2370px;
+    margin-bottom: 140px;
     >.inner{
         display: flex;
     }
@@ -75,6 +76,7 @@
 }
 .blog__content-more{
     padding-top: 18px;
+    text-transform: uppercase;
     font: 700 14px/24px 'Montserrat';
 }
 /*right column of blog*/
@@ -113,6 +115,7 @@
     font: 700 14px/48px 'Montserrat';
 }
 .posts-category{
+    display: flex;
     margin-bottom: 29px;
     border-bottom: 1px solid;
     button{
@@ -123,8 +126,6 @@
     }
 }
 .posts-category-list{
-    display: block;
-    float: left;
     width: 82px;
     text-align: center;
     border-bottom: 1px;
@@ -156,4 +157,22 @@
     font: 400 14px/48px 'Open Sans';
     padding: 0 15px;
     border-bottom: 1px solid;
+}
+/*tags*/
+.lcolumn__tags-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+}
+.lcolumn__tags-list{
+    margin: 5px;
+    min-width: 55px;
+    background: #e5e5e5;
+    a{
+        display: block;
+        padding: 0 14px;
+        text-align: center;
+        text-transform: uppercase;
+        font: 700 12px/48px 'Montserrat';
+    }
 }
