@@ -10,16 +10,19 @@
   text-align: center;
 }
 /*services section*/
-.services__top {
+.services__top,
+.pricing__top {
   width: 750px;
   height: 90px;
   margin: 0 auto 100px;
   text-align: center;
 }
-.services__top-title {
+.services__top-title,
+.pricing__top-title {
   position: relative;
 }
-.services__top-title:before {
+.services__top-title:before,
+.pricing__top-title:before {
   position: absolute;
   z-index: -1;
   content: '';
@@ -46,11 +49,13 @@
 .services__bottom__lists {
   display: flex;
 }
-.services__listed-list {
+.services__listed-list,
+.pricing__bottom__services-list {
   list-style-type: none;
   font: 400 14px/30px 'Open Sans';
 }
-.services__listed-list:before {
+.services__listed-list:before,
+.pricing__bottom__services-list:before {
   content: '\e80a';
   padding-right: 10px;
   font-family: "fontello";
@@ -60,6 +65,7 @@
 }
 .features {
   height: 210px;
+  margin-bottom: 149px;
 }
 .features > .inner {
   padding: 0;
@@ -91,4 +97,44 @@
 }
 .features__content-text {
   font: 400 14px/30px 'Open Sans';
+}
+/*pricing section*/
+.pricing > .inner {
+  padding: 0;
+}
+.pricing__bottom {
+  display: flex;
+  justify-content: space-around;
+}
+.pricing__bottom-list {
+  width: 360px;
+  height: 490px;
+  margin-bottom: 150px;
+  padding: 30px 0 40px 30px;
+  list-style-type: none;
+  border-top: 5px solid #7beec7;
+  background: linear-gradient(to bottom left, #7beec7 2%, white 1%);
+}
+.pricing__bottom-list:hover {
+  box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.4);
+}
+.pricing__bottom-list .btn {
+  width: 135px;
+  margin-top: 30px;
+}
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 30px;
+  margin-bottom: 30px;
+  background: #7beec7;
+}
+.price p {
+  font: 700 14px/48px 'Montserrat';
+  color: #ffffff;
+}
+.pricing__bottom__services-list {
+  line-height: 36px;
 }
