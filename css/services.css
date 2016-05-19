@@ -58,3 +58,37 @@
   font-weight: normal;
   color: #bdf7e3;
 }
+.features {
+  height: 210px;
+}
+.features > .inner {
+  padding: 0;
+}
+.features__content {
+  display: flex;
+}
+.features__content-list {
+  position: relative;
+  margin: 0 15px;
+  list-style-type: none;
+  text-align: center;
+}
+.features__content-list i {
+  font-size: 34.3px;
+}
+.features__content-list:before {
+  position: absolute;
+  top: 28px;
+  z-index: -1;
+  content: '';
+  width: 52px;
+  height: 22px;
+  background: #7beec7;
+}
+.features__content-title {
+  padding-top: 30px;
+  font: 700 18px/30px 'Montserrat';
+}
+.features__content-text {
+  font: 400 14px/30px 'Open Sans';
+}
