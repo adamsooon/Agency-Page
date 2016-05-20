@@ -40,10 +40,6 @@ figure {
   background: #7beec7;
   color: #fff;
 }
-.btn-white {
-  background: #fff;
-  color: #7beec7;
-}
 .btn-submit {
   width: 135px;
   height: 50px;
@@ -53,6 +49,25 @@ figure {
   outline: 0;
   background: #7beec7;
   color: #fff;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  width: 165px;
+  height: 50px;
+  font: 700 14px/48px 'Montserrat';
+}
+.link-text {
+  text-transform: uppercase;
+  color: #fff;
+}
+.link-green {
+  background: #7beec7;
+}
+.link-white {
+  background: #fff;
+  color: #7beec7;
 }
 .subtitle {
   line-height: 24px;
@@ -68,7 +83,7 @@ figure {
   font: 700 14px/48px 'Montserrat';
 }
 .img-wrapper {
-  width: 100%;
+  max-width: 100%;
 }
 .img-wrapper img {
   display: block;
@@ -88,7 +103,7 @@ button {
 .hero {
   width: 555px;
   height: 200px;
-  margin-left: 308px;
+  margin: 0 auto;
 }
 .hero__top {
   display: table;
@@ -137,7 +152,7 @@ button {
   width: 555px;
   height: 300px;
 }
-.agency .btn {
+.agency .link {
   position: absolute;
   bottom: -23px;
   right: 0;
@@ -151,7 +166,7 @@ button {
   margin-top: 250px;
 }
 .chooseus__top {
-  width: 750px;
+  max-width: 750px;
   height: 90px;
   margin: 0 auto 100px;
   text-align: center;
@@ -205,9 +220,9 @@ button {
 }
 /*top part of portfolio section*/
 .portfolio__top {
-  width: 782px;
+  max-width: 782px;
   height: 91px;
-  margin: 0 228px 0 150px;
+  margin: 0 auto;
   padding: 0 5px;
   text-align: center;
 }
@@ -277,9 +292,6 @@ button {
 .portfolio__rcolumn {
   width: 877px;
 }
-.portfolio__rcolumn a:hover {
-  opacity: 0.4;
-}
 .portfolio__rcolumn__box {
   padding: 0;
   -moz-column-gap: 1.5em;
@@ -292,6 +304,9 @@ button {
   background: #fff;
   margin: 15px;
   width: 100%;
+}
+.item :hover {
+  opacity: 0.6;
 }
 @media only screen and (min-width: 400px) {
   .portfolio__rcolumn__box {
@@ -440,4 +455,108 @@ button {
 }
 .social-media li {
   display: inline-block;
+}
+@media screen and (max-width: 1169px) {
+  .inner {
+    width: auto;
+  }
+}
+@media (min-width: 588px) and (max-width: 880px) {
+  /* header */
+  .main-top {
+    margin-bottom: 0;
+  }
+  .main-top figure {
+    display: none;
+  }
+  .main-top .link {
+    bottom: 14%;
+    left: 40%;
+  }
+  .hero {
+    width: auto;
+  }
+  .agency {
+    width: auto;
+  }
+  .agency-title {
+    text-align: center;
+  }
+  .agency-content {
+    text-align: center;
+  }
+  .chooseus {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .chooseus__top {
+    margin-bottom: 50px;
+  }
+  .chooseus__bottom {
+    min-height: 250px;
+  }
+  .chooseus__bottom figure {
+    display: none;
+  }
+  .chooseus__bottom__services {
+    width: 100%;
+  }
+  .chooseus__bottom__services__list {
+    width: 50%;
+  }
+  .chooseus__bottom__services__list:nth-child(even) {
+    padding-left: 0px;
+  }
+  /*portfolio section*/
+  .portfolio {
+    margin-top: 50px;
+  }
+  .portfolio__bottom {
+    height: auto;
+  }
+  .portfolio__lcolumn {
+    display: none;
+  }
+  .portfolio__rcolumn {
+    width: auto;
+  }
+  /*newsletter*/
+  .newsletter {
+    height: 436px;
+    padding-top: 30px;
+  }
+  .newsletter > .inner {
+    flex-direction: column;
+  }
+  .newsletter__introduce {
+    width: auto;
+    margin-right: 0;
+  }
+  .newsletter__introduce .link {
+    margin: 0 auto;
+  }
+  .newsletter__introduce-title {
+    text-align: center;
+  }
+  .newsletter__form {
+    max-height: 555px;
+    margin: 0 auto;
+  }
+  /*footer*/
+  .navigation > .inner {
+    flex-direction: column;
+  }
+  .navigation__left {
+    margin-right: 0;
+    text-align: center;
+  }
+  .navigation__left li {
+    padding: 0px 17px 0px 0;
+  }
+  .navigation__right-author {
+    text-align: center;
+  }
+  .social-media {
+    text-align: center;
+  }
 }

@@ -13,6 +13,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" />
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/user.css">
@@ -27,14 +28,27 @@
     <header class="main-top">
         <div class="inner">
             <div class="hero">
-                <div class="hero__top">
-                    <p class="hero__top-text">We're</p>
+                <div class="hero1">
+                    <div class="hero__top">
+                        <p class="hero__top-text">We're</p>
+                    </div>
+                    <div class="hero__title">
+                        <h1 class="hero__title-text">Creative Stuff</h1>
+                    </div>
+                    <div class="hero__subtitle">
+                        <p class="hero__subtitle__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
-                <div class="hero__title">
-                    <h1 class="hero__title-text">Creative Agency</h1>
-                </div>
-                <div class="hero__subtitle">
-                    <p class="hero__subtitle__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                   <div class="hero1">
+                    <div class="hero__top">
+                        <p class="hero__top-text">We're</p>
+                    </div>
+                    <div class="hero__title">
+                        <h1 class="hero__title-text">Digital Agency</h1>
+                    </div>
+                    <div class="hero__subtitle">
+                        <p class="hero__subtitle__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipisicing elit.</p>
+                    </div>
                 </div>
             </div>
             <div class="main-top__bottom">
@@ -44,7 +58,7 @@
                 <div class="agency">
                     <h2 class="agency-title">History of Agency</h2>
                     <p class="agency-content">Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.</p>
-                    <button class="btn btn-green">Read More</button>
+                    <a href="" class="link link-green"><span class="link-text">Read More</span></a>
                 </div>
             </div>
         </div>
@@ -98,10 +112,9 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="photo">
+                <figure class="img-wrapper photo">
                     <img src="img/Homepage/chair.jpg" alt="chair">
-                    <!-- Chyba lepie dać obrazek w background?-->
-                </div>
+                </figure>
             </div>
         </div>
     </section>
@@ -129,31 +142,31 @@
                 <div class="portfolio__rcolumn">
                     <ul class="portfolio__rcolumn__box">
                         <li class="item">
-                            <a href="#"><img src="img/Homepage/desk.jpg" alt="#"></a>
+                            <a href="#"><figure class="img-wrapper"><img src="img/Homepage/desk.jpg" alt="#"></figure></a>
                         </li>
                         <li class="item">
-                            <a href="#"><img src="img/Homepage/list2.jpg" alt="#"></a>
+                            <a href="#"><figure class="img-wrapper"><img src="img/Homepage/list2.jpg" alt="#"></figure></a>
                         </li>
                         <li class="item">
-                            <a href="#"><img src="img/Homepage/list3.jpg" alt="#"></a>
+                            <a href="#"><figure class="img-wrapper"><img src="img/Homepage/list3.jpg" alt="#"></figure></a>
                         </li>
                         <li class="item">
-                            <a href="#"><img src="img/Homepage/list4.jpg" alt="#"></a>
+                            <a href="#"><figure class="img-wrapper"><img src="img/Homepage/list4.jpg" alt="#"></figure></a>
                         </li>
                         <li class="item">
-                            <a href="#"><img src="img/Homepage/list5.jpg" alt="#"></a>
+                            <a href="#"><figure class="img-wrapper"><img src="img/Homepage/list5.jpg" alt="#"></figure></a>
                         </li>
                         <li class="item">
-                            <a href="#"><img src="img/Homepage/list6.jpg" alt="#"></a>
+                            <a href="#"><figure class="img-wrapper"><img src="img/Homepage/list6.jpg" alt="#"></figure></a>
                         </li>
                         <li class="item">
-                            <a href="#"><img src="img/Homepage/list7.jpg" alt="#"></a>
+                            <a href="#"><figure class="img-wrapper"><img src="img/Homepage/list7.jpg" alt="#"></figure></a>
                         </li>
                         <li class="item">
-                            <a href="#"><img src="img/Homepage/list8.jpg" alt="#"></a>
+                            <a href="#"><figure class="img-wrapper"><img src="img/Homepage/list8.jpg" alt="#"></figure></a>
                         </li>
                         <li class="item">
-                            <a href="#"><img src="img/Homepage/list9.jpg" alt="#"></a>
+                            <a href="#"><figure class="img-wrapper"><img src="img/Homepage/list9.jpg" alt="#"></figure></a>
                         </li>
                     </ul>
                 </div>
@@ -164,13 +177,13 @@
         <div class="inner">
             <div class="newsletter__introduce">
                 <h2 class="newsletter__introduce-title">you think we're coll? let's work together</h2>
-                <button class="btn btn-white">Get In Touch</button>
+                <a href="#" class="link link-white">Get In Touch</a>
             </div>
             <form class="newsletter__form" method="post">
                 <h3 class="newsletter__form-title">Stay Informed With Our Newsletter</h3>
                 <p class="newsletter__form-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="newsletter__form__inputs">
-                <input id="email" type="email" class="newsletter__form-email" required>
+                    <input id="email" type="email" class="newsletter__form-email" required>
                     <label for="email">Your Email</label>
                     <input type="submit" class="btn-submit" value="SEND">
                 </div>
@@ -208,6 +221,7 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

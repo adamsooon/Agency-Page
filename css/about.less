@@ -123,23 +123,30 @@
 
 
 /* team section*/
-.team{
+
+.team {
     padding-bottom: 150px;
-    >.inner{
+    >.inner {
         padding: 0;
     }
 }
-.team__photos{
+
+.team__photos {
     display: flex;
     flex-wrap: wrap;
 }
-.team__photos-list{
+
+.team__photos-list {
     width: 262px;
     height: 335px;
     margin: 15px;
     list-style-type: none;
+    &:hover {
+        opacity: 0.6;
+    }
 }
-.team__bottom{
+
+.team__bottom {
     display: flex;
     height: 150px;
     margin: 0 15px;
@@ -148,24 +155,89 @@
     align-items: center;
     background: #efeff0;
 }
+
+
 /*brand section*/
 
-.brands{
+.brands {
     margin-bottom: 150px;
-    >.inner{
+    >.inner {
         display: flex;
         padding-right: 0;
     }
 }
-.lbrands-text{
-    width: 555px;
+
+.lbrands {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font: 400 14px/30px 'Open Sans';
+    .img-wrapper {
+        display: flex;
+        justify-content: center;
+        max-width: 79px;
+        max-height: 79px;
+        margin-bottom: 28px;
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        bottom: -12px;
+        left: 52%;
+        width: 16px;
+        height: 5px;
+        background: black
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        bottom: -12px;
+        left: 56%;
+        width: 16px;
+        height: 5px;
+        background: black;
+    }
+    .link {
+        position: relative;
+        align-items: center;
+        width: 99px;
+        height: 29px;
+        &:before {
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 5px;
+            background: #7beec7;
+            bottom: -20px;
+            left: 0;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            bottom: -20px;
+            left: 39%;
+            width: 16px;
+            height: 5px;
+            background: black
+        }
+    }
 }
-.rbrands{
+
+.lbrands-text {
+    width: 555px;
+    margin-bottom: 10px;
+    padding-right: 3px;
+    text-align: center;
+}
+
+.rbrands {
     display: flex;
     flex-wrap: wrap;
     margin-left: 15px;
 }
-.rbrands-list{
+
+.rbrands-list {
     width: 165px;
     height: 100px;
     margin: 15px;
@@ -175,3 +247,6 @@
     justify-content: center;
     align-items: center;
 }
+
+
+/* media queries */

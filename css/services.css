@@ -118,7 +118,7 @@
 .pricing__bottom-list:hover {
   box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.4);
 }
-.pricing__bottom-list .btn {
+.pricing__bottom-list .link {
   width: 135px;
   margin-top: 30px;
 }
