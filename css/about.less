@@ -250,3 +250,136 @@
 
 
 /* media queries */
+
+//tablet landscape
+@media (min-width: 900px) and (max-width: 1169px) {
+    .benefits__options {
+        justify-content: center;
+    }
+    .benefits__option-title {
+        font-size: 17px;
+    }
+    .benefits__options-list {
+        width: 31%;
+        height: auto;
+        margin: 7px;
+    }
+    .benefits__top,
+    .team__top {
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .team {
+        padding-bottom: 100px;
+    }
+    .team__photos {
+        justify-content: center;
+    }
+    .team__bottom {
+        padding: 0 30px;
+    }
+    .brands {
+        margin-bottom: 100px;
+    }
+    .lbrands {
+        width: 50%;
+    }
+    .rbrands {
+        width: 50%;
+        justify-content: center;
+    }
+    .navigation__left li {
+        padding-right: 27px;
+    }
+}
+
+@media
+/*(min-width: 604px) and*/
+
+(max-width: 899px) {
+    .info {
+        margin-bottom: 50px;
+    }
+    .benefits {
+        margin-bottom: 50px;
+    }
+    .benefits__options-list {
+        width: 44%;
+        height: auto;
+        margin: 15px;
+        justify-content: center;
+    }
+    .team {
+        padding-bottom: 30px;
+    }
+    .team__photos {
+        justify-content: center;
+    }
+    .benefits__top,
+    .team__top {
+        margin-bottom: 30px;
+    }
+    .benefits__option-title {
+        font-size: 15.6px;
+    }
+    .brands {
+        margin-bottom: 50px;
+        >.inner {
+            display: flex;
+            padding-right: 0;
+            flex-direction: column;
+        }
+    }
+    .lbrands {
+        .img-wrapper {
+            max-width: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+    }
+    .lbrands-text {
+        padding-right: 0;
+        text-align: center;
+        margin: 0 auto 10px;
+    }
+    .name-box {
+        text-align: center;
+    }
+    .rbrands {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0px;
+        justify-content: center
+    }
+    .rbrands-list {
+        width: 46%;
+        height: 100px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+//mobile
+@media (max-width: 603px) {
+    .info-text {
+        height: 200px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .benefits__options-list {
+        width: 100%;
+        margin: 15px;
+    }
+    .team__bottom {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    .team__buttom-text{
+        text-align: center;
+    }
+    .rbrands-list{
+        width: 100%;
+    }
+}

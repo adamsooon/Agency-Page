@@ -730,4 +730,7 @@ button {
   .navigation__right .social-media {
     text-align: center;
   }
+  .navigation__right-author {
+    text-align: center;
+  }
 }
