@@ -137,15 +137,16 @@
     list-style-type: none;
     border-top: 5px solid #7beec7;
     background: linear-gradient(to bottom left, #7beec7 2%, white 1%);
-    &:hover{
+    &:hover {
         box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.4);
     }
-    .link{
+    .link {
         width: 135px;
         margin-top: 30px;
     }
 }
-.price{
+
+.price {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,11 +154,102 @@
     height: 30px;
     margin-bottom: 30px;
     background: #7beec7;
-    p{
+    p {
         font: 700 14px/48px 'Montserrat';
         color: #ffffff;
     }
 }
-.pricing__bottom__services-list{
+
+.pricing__bottom__services-list {
     line-height: 36px;
+}
+
+
+/* RWD */
+
+@media (min-width: 700px) and (max-width: 1020px) {
+    .header-services {
+        height: 400px;
+        margin-bottom: 100px;
+        padding-top: 150px;
+    }
+    .services__top,
+    .pricing__top {
+        max-width: 650px;
+        height: auto;
+        margin: 0 auto 50px;
+    }
+    .services__bottom {
+        display: block;
+        height: auto;
+        margin-bottom: 100px;
+        figure {
+            text-align: center;
+        }
+    }
+    .services__bottom__content-text {
+        max-width: 720px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .services__bottom__lists {
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    .services__listed1 {
+        width: 30%;
+        margin-right: 0;
+    }
+    .services__listed2 {
+        width: 30%;
+    }
+}
+
+//mobile
+@media (max-width: 699px) {
+    .features__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .services__top,.pricing__top {
+        width: auto;
+        margin: 0 auto 30px;
+    }
+    .pricing__bottom {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .services__bottom {
+        height: auto;
+        figure {
+            display: none;
+        }
+    }
+    .services__bottom {
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .services__bottom__content {
+        margin-right: 0;
+    }
+    .services__listed1,
+    .services__listed2 {
+        width: 50%;
+        margin: 0;
+    }
+    .services__bottom__lists {
+        justify-content: space-around;
+    }
+    .features {
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .features__content {
+        flex-wrap: wrap;
+    }
+    .pricing__bottom-list{
+        margin-bottom: 15px;
+    }
 }
