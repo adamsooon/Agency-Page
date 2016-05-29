@@ -30,6 +30,35 @@ $(document).ready(function () {
         }
     });
 });
+
+/* Blog */
+
+//posts
+if($('.posts-category-latests').length){
+    $('#blatest').click(function(){
+        $('.posts-category-latests').addClass('posts-active');
+        $('.posts-category-popular,.posts-category-comments').removeClass('posts-active');
+        $('.posts__latests').addClass('posts-list-active');
+        $('.posts__popular,.posts__comments').removeClass('posts-list-active');
+    });
+}
+if($('.posts-category-popular').length){
+    $('#bpopular').click(function(){
+        $('.posts-category-popular').addClass('posts-active');
+        $('.posts-category-latests,.posts-category-comments').removeClass('posts-active');
+        $('.posts__popular').addClass('posts-list-active');
+        $('.posts__latests,.posts__comments').removeClass('posts-list-active');
+        
+    });
+}
+if($('.posts-category-comments').length){
+    $('#bcomments').click(function(){
+        $('.posts-category-comments').addClass('posts-active');
+        $('.posts-category-latests,.posts-category-popular').removeClass('posts-active');
+        $('.posts__comments').addClass('posts-list-active');
+        $('.posts__popular,.posts__latests').removeClass('posts-list-active');
+    });
+}
 //Google maps
 if ($('.map-wrap').length) {
     $('.map-wrap').easyGoogleMaps({

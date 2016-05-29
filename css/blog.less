@@ -133,6 +133,7 @@
     }
 }
 
+
 .lcolumn-title {
     font: 700 14px/48px 'Montserrat';
 }
@@ -140,7 +141,7 @@
 .posts-category {
     display: flex;
     margin-bottom: 29px;
-    border-bottom: 1px solid;
+   // border-bottom: 1px solid;
     button {
         font: 400 12px/48px 'Montserrat';
         outline: 0;
@@ -149,11 +150,17 @@
     }
 }
 
-.posts-category-list {
+.posts-category-latests,
+.posts-category-popular,
+.posts-category-comments {
     width: 82px;
     text-align: center;
-    border-bottom: 1px;
+    border-bottom: 2px solid #999;
 }
+.posts-active {
+    border-bottom: 2px solid #7beec7;
+}
+
 
 .posts__latests-list {
     display: flex;
@@ -177,6 +184,7 @@
     font: 400 12px/18px 'Open Sans';
 }
 
+.posts__latests,
 .posts__popular,
 .posts__comments {
     display: none;
@@ -191,7 +199,9 @@
     border-bottom: 1px solid;
 }
 
-
+.posts-list-active{
+    display: block;
+}
 /*tags*/
 
 .lcolumn__tags-content {
@@ -222,7 +232,7 @@
         margin-bottom: 50px;
         padding-top: 150px;
     }
-    .blog{
+    .blog {
         height: auto;
         margin-bottom: 0;
     }
@@ -269,10 +279,10 @@
     .postsx {
         display: none;
     }
-    .lcolumn__tags{
+    .lcolumn__tags {
         display: none;
     }
-    .lcolumn__archieves{
+    .lcolumn__archieves {
         width: 50%;
         margin: 5px;
     }
